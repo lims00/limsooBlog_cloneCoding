@@ -27,9 +27,10 @@ const Wrapper=styled.div`
 
 const CardsWrapper=styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  margin: 100px;
+  margin-right: 100px;
+  margin-top:80px;
   width: 60%;
   height: 80%;
 
@@ -41,7 +42,7 @@ const Main = () => {
                 <MainTitle>shweety의<br/>IT블로그</MainTitle>
             </MainBox>
             <CardsWrapper>
-                <SmallCard></SmallCard>
+                <SmallCard title={"블로그 오픈 안내"} subtitle={["글씨가 있어요!"," 옆에 글씨가 또 있네!","옆에 글씨가 더더더 길게 있네!"]}></SmallCard>
                 <SmallCard></SmallCard>
                 <SmallCard></SmallCard>
                 <SmallCard></SmallCard>

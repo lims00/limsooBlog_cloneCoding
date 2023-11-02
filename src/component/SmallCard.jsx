@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   height: 150px;
   margin-left: 10px;
   margin-right: 10px;
-  margin-bottom: 100px;
+  margin-bottom: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 `
 
@@ -27,20 +27,21 @@ const SubTitle = styled.div`
 const TextWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin:10px;
+  margin: 10px;
 `
 
 
 const ImgBox = styled.img`
 
 `
-const SmallCard = () => {
+const SmallCard = ({title = '', subtitle = []}) => {
+
     return (
         <Wrapper>
             <ImgBox src={img}></ImgBox>
             <TextWrapper>
-                <Title>블로그 오픈 안내</Title>
-                <SubTitle> 글씨가 있어요!<br/>옆에 글씨가 또 있네!<br/>옆에 글씨가 더더더 길게 있네!</SubTitle>
+                <Title>{title}</Title>
+                {subtitle.map((s)=><SubTitle>{s}</SubTitle>)}
             </TextWrapper>
         </Wrapper>
 
