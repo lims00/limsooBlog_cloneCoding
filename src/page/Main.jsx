@@ -45,8 +45,6 @@ const Main = () => {
                 <SmallCard></SmallCard>
                 <SmallCard></SmallCard>
                 <SmallCard></SmallCard>
-                <SmallCard></SmallCard>
-                <SmallCard></SmallCard>
             </CardsWrapper>
 
         </Wrapper>
